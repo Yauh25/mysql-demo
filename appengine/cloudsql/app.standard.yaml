@@ -18,7 +18,11 @@ runtime: nodejs8
 # The following env variables may contain sensitive information that grants
 # anyone access to your database. Do not add this file to your source control.
 env_variables:
-  SQL_USER: dev
+env_variables:
+  MYSQL_DNS: mysql:unix_socket=/cloudsql/authentification-212011:us-central1:authentification;dbname=Authentification
+  MYSQL_USER: dev
+  MYSQL_PASSWORD: dev
+
   SQL_PASSWORD: dev
   SQL_DATABASE: Authentification
   # e.g. my-awesome-project:us-central1:my-cloud-sql-instance
