@@ -10,7 +10,8 @@ const app = express()
 // })
 
 const db = mysql.createConnection({
-    host     : '104.154.198.17',
+    //host     : '104.154.198.17',
+    host     : 'mysql:unix_socket=/cloudsql/authentification-212011:us-central1:authentification;dbname=Authentification',
     user     : 'dev',
     password : 'dev',
     database : 'Authentification'
