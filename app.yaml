@@ -7,3 +7,9 @@ resources:
   cpu: 1
   memory_gb: 0.5
   disk_size_gb: 10
+
+env_variables:
+  MYSQL_DNS: mysql:unix_socket=/cloudsql/authentification-212011:us-central1:authentification;dbname=Authentification
+  MYSQL_USER: dev
+  MYSQL_PASSWORD: 'dev'
+  
